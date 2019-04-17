@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A simple way to convert svg to png.">
+    <meta name="author" content="Jondy Zhao">
+
+    <title>SVG To PNG</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <style type="text/css">
+    </style>
+  </head>
+
+<body>
+
+  <h1 class="bg-light p-3 mb-5 text-center w-100">SVG To Png</h1>
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12 mb-3">
+        <input type="file" id="ifile" accept="image/svg" class="d-none">
+        <button id="load" type="button" class="btn btn-outline-primary mr-3">Load</button>
+        <button id="draw" type="button" class="btn btn-outline-success mx-5">Draw</button>
+      </div>
+      
+      <div class="col-12">
+        <form>
+          <div class="form-group">
+            <textarea class="form-control" id="svg-content" rows="10"></textarea>
+          </div>
+        </form>
+      </div>
+      
+      <div class="col-12">
+        <canvas id="canvas" class="bg-light"></canvas>
+      </div>
+      
+    </div>
+  </div>
+
+  <div id="svg-preview" class="d-none"></div>
+    
+  <script type="text/javascript" src="svg2png.js"></script>
+</body>
+
+</html>
